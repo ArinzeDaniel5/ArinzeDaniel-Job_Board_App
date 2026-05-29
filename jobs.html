@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="Width=device-width,
+    initial-scale=1.0">
+    <title>All Jobs</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Job Board</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+        <section class="page-header">
+            <h1>Available Jobs</h1>
+        </section>
+        <section class="filters">
+            <input type="text"id="searchJobs"placeholder="Search jobs...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Development">Development</option>
+                <option value="Design">Design</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+        </section>
+        <main class="container">
+            <div id="jobsContainer"class="jobs-grid"></div>
+        </main>
+        <script type="module"src="js/jobs.js"></script>
+</body>
+</html>
